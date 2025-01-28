@@ -23,11 +23,11 @@ TagManager:
   - Camera
   - MainCameraOnly
   - 
+  - SpecialShaders
   - 
-  - 
-  - 
-  - 
-  - 
+  - mask
+  - portal1
+  - portal2
   - 
   - Cockpit
   - Cockpit_3DSkybox
