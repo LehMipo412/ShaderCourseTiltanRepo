@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b3d386ba5cd94485973aee1479b272e, type: 3}
   m_Name: PeepingTom
   m_EditorClassIdentifier: 
-  m_Active: 0
+  m_Active: 1
   settings:
     passTag: PeepingTom
     Event: 300
@@ -22,27 +22,27 @@ MonoBehaviour:
         serializedVersion: 2
         m_Bits: 16384
       PassNames: []
-    overrideMaterial: {fileID: 0}
-    overrideMaterialPassIndex: 0
+    overrideMaterial: {fileID: 2100000, guid: e0c77c43cecdc10458072f462a900673, type: 2}
+    overrideMaterialPassIndex: 4000
     overrideShader: {fileID: 0}
     overrideShaderPassIndex: 0
     overrideMode: 1
     overrideDepthState: 1
-    depthCompareFunction: 4
+    depthCompareFunction: 8
     enableWrite: 1
     stencilSettings:
-      overrideStencilState: 0
-      stencilReference: 0
-      stencilCompareFunction: 8
-      passOperation: 0
-      failOperation: 0
-      zFailOperation: 0
+      overrideStencilState: 1
+      stencilReference: 1
+      stencilCompareFunction: 5
+      passOperation: 2
+      failOperation: 2
+      zFailOperation: 2
     cameraSettings:
       overrideCamera: 0
       restoreCamera: 1
       offset: {x: 0, y: 0, z: 0, w: 0}
       cameraFieldOfView: 60
---- !u!114 &-3751262535411419207
+--- !u!114 &-1382206099061773325
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -52,31 +52,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b3d386ba5cd94485973aee1479b272e, type: 3}
-  m_Name: FullscreenMask
+  m_Name: xray
   m_EditorClassIdentifier: 
-  m_Active: 0
+  m_Active: 1
   settings:
-    passTag: FullscreenMask
-    Event: 450
+    passTag: xray
+    Event: 300
     filterSettings:
       RenderQueueType: 0
       LayerMask:
         serializedVersion: 2
-        m_Bits: 1536
+        m_Bits: 131072
       PassNames: []
-    overrideMaterial: {fileID: 2100000, guid: 725a070d0d3a84543b62d9387002f061, type: 2}
-    overrideMaterialPassIndex: 0
+    overrideMaterial: {fileID: 2100000, guid: e0c77c43cecdc10458072f462a900673, type: 2}
+    overrideMaterialPassIndex: 4000
     overrideShader: {fileID: 0}
     overrideShaderPassIndex: 0
     overrideMode: 1
-    overrideDepthState: 0
-    depthCompareFunction: 4
+    overrideDepthState: 1
+    depthCompareFunction: 8
     enableWrite: 1
     stencilSettings:
-      overrideStencilState: 1
-      stencilReference: 2
+      overrideStencilState: 0
+      stencilReference: 0
       stencilCompareFunction: 8
-      passOperation: 2
+      passOperation: 0
       failOperation: 0
       zFailOperation: 0
     cameraSettings:
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de640fe3d0db1804a85f9fc8f5cadab6, type: 3}
-  m_Name: PC_High_Renderer
+  m_Name: PeepongTomRenderer
   m_EditorClassIdentifier: 
   debugShaders:
     debugReplacementPS: {fileID: 4800000, guid: cf852408f2e174538bcd9b7fda1c5ae7, type: 3}
@@ -117,12 +117,10 @@ MonoBehaviour:
   - {fileID: -1114110547848633439}
   - {fileID: 7833122117494664109}
   - {fileID: 3573653513797426673}
-  - {fileID: -3751262535411419207}
-  - {fileID: 6283734273876103259}
-  - {fileID: 4484945730944378689}
   - {fileID: -8711982418207877392}
   - {fileID: 9117008458890149130}
-  m_RendererFeatureMap: a163f70a5ce289f0ad6b866f10d7b46cf1dd38d0ef2a9831b937925d99d6f0cb5b105589074f34574127d84961ba3d3ef056451126d218870afd60aee31e867e
+  - {fileID: -1382206099061773325}
+  m_RendererFeatureMap: a163f70a5ce289f0ad6b866f10d7b46cf1dd38d0ef2a9831f056451126d218870afd60aee31e867ef36b0b4be06ad1ec
   m_UseNativeRenderPass: 1
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -184,68 +182,6 @@ MonoBehaviour:
       normalBlend: 0
   m_CopyDepthPS: {fileID: 4800000, guid: d6dae50ee9e1bfa4db75f19f99355220, type: 3}
   m_DBufferClear: {fileID: 4800000, guid: f056d8bd2a1c7e44e9729144b4c70395, type: 3}
---- !u!114 &4484945730944378689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b3d386ba5cd94485973aee1479b272e, type: 3}
-  m_Name: JamesBond
-  m_EditorClassIdentifier: 
-  m_Active: 0
-  settings:
-    passTag: JamesBond
-    Event: 300
-    filterSettings:
-      RenderQueueType: 0
-      LayerMask:
-        serializedVersion: 2
-        m_Bits: 16384
-      PassNames: []
-    overrideMaterial: {fileID: 0}
-    overrideMaterialPassIndex: 0
-    overrideShader: {fileID: 0}
-    overrideShaderPassIndex: 0
-    overrideMode: 1
-    overrideDepthState: 1
-    depthCompareFunction: 5
-    enableWrite: 1
-    stencilSettings:
-      overrideStencilState: 0
-      stencilReference: 0
-      stencilCompareFunction: 8
-      passOperation: 0
-      failOperation: 0
-      zFailOperation: 0
-    cameraSettings:
-      overrideCamera: 0
-      restoreCamera: 1
-      offset: {x: 0, y: 0, z: 0, w: 0}
-      cameraFieldOfView: 60
---- !u!114 &6283734273876103259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
-  m_Name: LensFeature
-  m_EditorClassIdentifier: 
-  m_Active: 1
-  injectionPoint: 600
-  fetchColorBuffer: 1
-  requirements: -1
-  passMaterial: {fileID: 2100000, guid: 941fa260315b5fe4ea15bf47cb60f1a4, type: 2}
-  passIndex: 0
-  bindDepthStencilAttachment: 0
-  m_Version: 1
 --- !u!114 &7833122117494664109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,7 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b3d386ba5cd94485973aee1479b272e, type: 3}
   m_Name: PortalSupportive
   m_EditorClassIdentifier: 
-  m_Active: 0
+  m_Active: 1
   settings:
     passTag: PortalSupportive
     Event: 300
